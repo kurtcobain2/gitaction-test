@@ -10,4 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: print list of dir
-        run: ls -al
+        run: |
+          ls -al
+          pwd
