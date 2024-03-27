@@ -8,5 +8,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: print readme
-        run: cat README.md
+      - name: print list of dir
+        run: ls -al
