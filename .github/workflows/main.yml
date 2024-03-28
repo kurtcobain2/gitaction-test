@@ -13,9 +13,9 @@ jobs:
         run: |
           ls -al
           pwd
-          mkdir -p /tmp/bak
-          ls -al /tmp/bak
 
       - name: test for docker
         run: |
+          mkdir -p /tmp/bak
           docker save -o /tmp/bak/ubuntu.tar ubuntu:18.04
+          ls -al /tmp/bak
