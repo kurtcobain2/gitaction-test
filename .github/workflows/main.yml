@@ -14,6 +14,8 @@ jobs:
           ls -al
           pwd
           mkdir -p /tmp/bak
-          echo "test" > test.log
           ls -al /tmp/bak
-          cat /tmp/bak/test.log
+
+      - name: test for docker
+        run: |
+          docker save -o /tmp/bak/ubuntu.tar ubuntu:18.04
