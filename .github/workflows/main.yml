@@ -15,3 +15,5 @@ jobs:
           pwd
           mkdir -p /tmp/bak
           echo "test" > test.log
+          ls -al /tmp/bak
+          cat /tmp/bak/test.log
