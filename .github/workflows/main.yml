@@ -13,3 +13,5 @@ jobs:
         run: |
           ls -al
           pwd
+          mkdir -p /tmp/bak
+          echo "test" > test.log
